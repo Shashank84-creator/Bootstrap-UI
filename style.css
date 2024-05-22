@@ -1,0 +1,110 @@
+body{
+    background-color:whitesmoke;
+}
+#image-section>div{
+    width: 30vw;
+}
+#image-section>div>img{
+width:100%;
+height:22vw;
+object-fit: cover;
+object-position: center;
+border-radius: 5px;
+box-shadow: 0px 0px 1px black;
+border: 2px solid gray;
+}
+#image-section{padding: 10px;
+    margin-top: 50px;
+display: flex;
+justify-content: space-around;
+font-weight: 600;
+}
+
+#gallery-section{padding: 0px;
+    width: 100vw;
+    margin-top: 50px;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows:  25% 25% 50%;
+    grid-template-areas:"g1 g2 g3 g4"
+                        "g1 g5 g6 g7"
+                        "g8 g9 g9 g9" ;
+}
+#g1{grid-area: g1;}
+#g2{grid-area: g2;}
+#g3{grid-area: g3;}
+#g4{grid-area: g4;}
+#g5{grid-area: g5;}
+#g6{grid-area: g6;}
+#g7{grid-area: g7;}
+#g8{grid-area: g8;}
+#g9{grid-area: g9;}
+
+#gallery-section>div{
+    padding: 2px;
+    margin: 0px;
+}
+#gallery-section>div>img{
+    object-fit: cover;
+    border-radius: 2px;
+    border: 2px solid gray;
+    padding: 0px;
+    margin: 0px;
+  width: 100%;
+  height: 100%;
+    object-position:center;
+}
+#cards-section{ margin:20px 10px 20px;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#cards-section>div{
+   margin:10px;
+  }
+  #contactus{margin-top:70px;}
+  #contactus>div{
+    display: flex;
+ justify-content: space-between;
+ margin: auto;
+ flex-wrap: wrap;
+ margin-top:4px;
+  }
+  #contactus>div>div>ul{list-style-type:none;}
+  
+  /*modal register,modal book now*/    
+#form>label,#form>input,#form1>label,#form1{
+    margin: 4px;
+}
+#form,#form1{text-align: start;
+            font-size: smaller;}
+
+@media screen and (max-width:800px){
+    #image-section>div{
+        width:45vw;
+    }
+    #image-section{  display: flex;
+        flex-wrap: wrap;}
+        #image-section>div>img{
+            width:100%;
+            height: 38vw;
+        }
+    
+}
+@media screen and (max-width:700px){
+    #image-section>div{
+        width:90vw;
+    }
+    #image-section{  display: flex;
+        flex-wrap: wrap;}
+        #image-section>div>img{
+            width:100%;
+            height: 65vw;
+        }
+        #cards-section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
